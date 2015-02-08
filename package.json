@@ -21,6 +21,7 @@
   "gypfile": true,
   "scripts": {
     "coverage": "node scripts/coverage.js",
+    "preinstall": "rm -rf src/libsass; git clone https://github.com/sass/libsass.git src/libsass"
     "install": "node scripts/install.js",
     "postinstall": "node scripts/build.js",
     "pretest": "node_modules/.bin/jshint bin lib test",
